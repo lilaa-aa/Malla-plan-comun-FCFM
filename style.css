@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffe3ee;
+  padding: 20px;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #c0627f;
+  margin-bottom: 40px;
+}
+
+.malla-horizontal {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 10px;
+  padding: 10px;
+  overflow-x: auto;
+}
+
+.semestre {
+  flex: 1;
+  max-width: 25%;
+  min-width: 0;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.semestre h2 {
+  text-align: center;
+  color: #7f6a91;
+}
+
+.curso {
+  background-color: #fce7f3;
+  border: 2px solid #f472b6;
+  border-radius: 10px;
+  padding: 8px;
+  margin: 8px 0;
+  cursor: pointer;
+  font-size: 0.85em;
+  transition: background-color 0.3s ease;
+}
+
+.curso:hover {
+  background-color: #fbb6ce;
+}
+
+.curso.seleccionado {
+  background-color: #dc7092; /* Rosado fuerte */
+  color: white;
+}
+
+.curso.habilitado {
+  background-color: #fde68a; /* Amarillo */
+}
+
+.curso.requisito {
+  background-color: #bcc07b; /* Celeste */
+}
